@@ -2,7 +2,7 @@
 
 This is the official repository for the paper "_Break, Perturb, Build_: Automatic Perturbation of Reasoning Paths through Question Decomposition", accepted for publication in Transactions of the Association for Computational Linguistics (TACL), 2021.
 
-The repository provides the code of the BPB framework, and the generated evaluation sets.
+The repository provides the code and trained models of the BPB framework, and the generated evaluation sets.
 
 
 <p align="center"><img width="90%" src="img/bpb_overview.png" /></p>
