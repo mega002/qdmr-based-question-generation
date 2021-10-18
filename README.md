@@ -5,18 +5,10 @@ This is the official repository for the paper "_Break, Perturb, Build_: Automati
 The repository provides the code of the BPB framework, and the generated evaluation sets.
 
 
-<p align="center"><img width="40%" src="img/bpb_overview.png" /></p>
+<p align="center"><img width="90%" src="img/bpb_overview.png" /></p>
 
----
 
-## Quick Links
-1. [Setup](#setup)
-2. [BPB Models and Generated Data](#-bpb-models-and-generated-data)
-3. [Running BPB](#-running-bpb)
-4. [Evaluating QA Models](#-evaluating-qa-models)
-5. [Citation](#-citation)
 
----
 ## Setup
 
 The framework and experiments described in the paper were conducted in a **python 3.6.8** environment.  To clone the repository and set up the environment, please run the following commands:
@@ -28,7 +20,6 @@ python -m spacy download en
 ```
 
 
----
 
 
 ## 📦 BPB Models and Generated Data
@@ -65,7 +56,6 @@ The evaluation sets generated with BPB for the development sets of DROP, HotpotQ
 To run the BPB framework and generate new contrast/constraint sets, please keep reading. 
 
 
----
 
 ## ⚙️ Running BPB
 
@@ -146,7 +136,7 @@ python example_generation/get_example_info_for_transformed_qdmrs.py \
 
 The script will create four files of the generated contrast set, the generated constraint set, and the subsets of the original data from which these sets were generated.
 
----
+
 ## 📈 Evaluating QA Models
 
 To evaluate QA models on our generated contrast sets/constraint sets, first download the data files of the relevant dataset from the [data directory](data). Otherwise, if you have generated your own data files, you can use the following script to create input files of a specific format from the example-info files created by BPB.
@@ -163,7 +153,7 @@ python example_generation/get_examples_from_example_info.py \
 ### Analyze QA model performance
 The script `analyze_model_performance.py` takes as input prediction files in a `jsonl` format and analyze model performance across different perturbations and constraints. In addition, it compares model performance on the contrast set and the original subset of examples from which the contrast set was generated.
 
----
+
 
 ## ✍️ Citation
 
