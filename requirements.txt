@@ -1,0 +1,11 @@
+
+git+git://github.com/mega002/allennlp@self-v1.1.0rc4#egg=allennlp
+git+git://github.com/allenai/allennlp-models@v1.1.0rc4#egg=allennlp-models
+git+git://github.com/mega002/public-transformers@self-v3.1.0#egg=transformers
+
+argparse
+namegenerator
+pandas
+spacy
+tqdm
+
